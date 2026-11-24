@@ -6,4 +6,13 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
         },
         title: {
+            type: DataTypes.STRING, },
+        description: {
+            type: DataTypes.TEXT,
+        },
+        author: {
             type: DataTypes.STRING,
+        },
+    });
+    return Komik;
+};
